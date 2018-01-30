@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   display: none;
   background: white;
-  color: red;
+  color: #FF3333;
   padding: 6px 12px 9px 12px;
   font-size: 16px;
   border-radius: 2px;
@@ -69,12 +69,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .back-to-top:focus {
   background: white;
-  color: red;
+  color: #FF3333;
   outline: none;
 }
 
 .back-to-top:hover {
-  background: red;
+  background: #FF3333;
   color: white;
 }
 
@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header #logo h1 a, #header #logo h1 a:hover {
-  color: red;
+  color: #FF3333;
 }
 
 /*#header #logo img {
@@ -139,7 +139,7 @@ h1, h2, h3, h4, h5, h6 {
   display: table;
   width: 100%;
   height: 100vh;
-  background: url(../img/hero-bg.jpg) top center fixed;
+  background: url(../img/cropped-IMG_0266.jpg) top center fixed;
   background-size: cover;
 }
 
@@ -199,8 +199,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .btn-get-started:hover {
     /*background: #2dc997;*/
-    background: red;
-    border: 2px solid red;
+    background: #FF3333;
+    border: 2px solid #FF3333;
 }
 
 /*--------------------------------------------------------------
@@ -298,7 +298,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: red;
+  background-color: #FF3333;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -335,7 +335,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu ul li a:hover {
-  background: red;
+  background: #FF3333;
   color: #fff;
 }
 
@@ -423,11 +423,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #mobile-nav ul .menu-has-children i.fa-chevron-up {
-  color: red;
+  color: #FF3333;
 }
 
 #mobile-nav ul .menu-item-active {
-  color: red;
+  color: #FF3333;
 }
 
 #mobile-body-overly {
@@ -461,7 +461,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 .section-header .section-title {
   font-size: 32px;
-  color: red;
+  color: #FF3333;
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
@@ -483,8 +483,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about .about-container .background {
   min-height: 300px;
-  background: url(../img/about-img.jpg) center top no-repeat;
-  margin-bottom: 10px;
+  background: url(../img/soslogo.png) center top no-repeat;
+  background-size: contain;
+  margin-bottom: 40px;
 }
 
 #about .about-container .content {
@@ -492,7 +493,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-container .title {
-  color: red;
+  color: #FF3333;
   font-weight: 700;
   font-size: 32px;
 }
@@ -525,7 +526,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-container .icon-box .icon i {
-  color: red;
+  color: #FF3333;
   font-size: 40px;
 }
 
@@ -557,7 +558,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #facts .counters span {
   font-size: 48px;
   display: block;
-  color: red;
+  color: #FF3333;
 }
 
 #facts .counters p {
@@ -591,19 +592,19 @@ body.mobile-nav-active #mobile-nav-toggle {
     left: calc(50% - 36px);
     transition: 0.2s;
     display: inline-block;
-    border: 6px solid red;
+    border: 6px solid #FF3333;
 }
 
 #getinvolved .icon a {
     display: inline-block;
     background: white;
-    border: 2px solid red;
+    border: 2px solid #FF3333;
     padding: 16px;
     transition: 0.3s;
 }
 
 #getinvolved .icon i {
-    color: red;
+    color: #FF3333;
     font-size: 24px;
 }
 
@@ -613,7 +614,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #getinvolved .box:hover .icon a {
     color: white;
-    background: red;
+    background: #FF3333;
 }
 
 #getinvolved .title {
@@ -635,7 +636,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Donate Section
 --------------------------------*/
 #donate {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/call-to-action-bg.jpg) fixed center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/donateimg.jpg) fixed center center;
   background-size: cover;
   padding: 80px 0;
 }
@@ -674,8 +675,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #donate .donate-btn:hover {
-  background: red;
-  border: 2px solid red;
+  background: #FF3333;
+  border: 2px solid #FF3333;
 }
 
 /* Portfolio Section
@@ -712,7 +713,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #portfolio #portfolio-flters li:hover, #portfolio #portfolio-flters li.filter-active {
-  background: red;
+  background: #FF3333;
   color: #fff;
 }
 
@@ -738,7 +739,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #portfolio .portfolio-item .details {
   height: 50px;
-  background: red;
+  background: #FF3333;
   position: absolute;
   width: 100%;
   height: 50px;
@@ -812,7 +813,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #team .member .social a:hover {
-  color: red;
+  color: #FF3333;
 }
 
 #team .member .social i {
@@ -838,7 +839,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact .info i {
   font-size: 32px;
-  color: red;
+  color: #FF3333;
   float: left;
 }
 
@@ -872,13 +873,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .social-links a:hover {
-  background: red;
+  background: #FF3333;
   color: #fff;
 }
 
 #contact .form #sendmessage {
-  color: red;
-  border: 1px solid red;
+  color: #FF3333;
+  border: 1px solid #FF3333;
   display: none;
   text-align: center;
   padding: 15px;
@@ -887,9 +888,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form #errormessage {
-  color: red;
+  color: #FF3333;
   display: none;
-  border: 1px solid red;
+  border: 1px solid #FF3333;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -901,7 +902,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form .validation {
-  color: red;
+  color: #FF3333;
   display: none;
   margin: 0 0 20px;
   font-weight: 400;
@@ -915,7 +916,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form button[type="submit"] {
-  background: red;
+  background: #FF3333;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -940,7 +941,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
 }
 
-#footer .credits {
+#footer .c#FF3333its {
   padding-top: 10px;
   text-align: center;
   font-size: 13px;
