@@ -131,12 +131,13 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.5s;
 }
 
-/*#google-translate-element {
-    height: 100px;
+#header #google-translate-element {
+    height: 50px;
     position: fixed;
     left: 60px;
-    top: 1000px;
-}*/
+    bottom: 100px;
+}
+
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -284,7 +285,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Nav Meu Styling */
 .nav-menu a {
-  padding: 0 8px 10px 8px;
+  padding: 0 8px 0px 8px;
   text-decoration: none;
   display: inline-block;
   color: #fff;
@@ -304,6 +305,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   width: 100%;
   height: 2px;
+  top: 30px;
   bottom: 0;
   left: 0;
   background-color: #FF3333;
@@ -313,6 +315,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
+
 
 .nav-menu a:hover:before, .nav-menu li:hover > a:before, .nav-menu .menu-active > a:before {
   visibility: visible;
@@ -647,12 +650,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 #donate {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/donateimg.jpg) fixed center center;
   background-size: cover;
-  padding: 80px 0;
+  padding: 40px 0;
 }
 
 #donate .donate-title {
   color: white;
-  font-size: 28px;
+  font-size: 60px;
   font-weight: 700;
 }
 
@@ -669,18 +672,19 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #donate .donate-btn {
-  font-family: "Poppins", sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 30px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin: 10px;
-  border: 2px solid #fff;
-  color: #fff;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    /*font-size: 16px;*/
+    font-size: 40px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
 }
 
 #donate .donate-btn:hover {
