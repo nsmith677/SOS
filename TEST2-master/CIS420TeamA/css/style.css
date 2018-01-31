@@ -100,6 +100,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 36px;
   margin: 0;
   /*padding: 6px 0;*/
+  padding: -60px;
   line-height: 1;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -111,10 +112,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #FF3333;
 }
 
-/*#header #logo img {
-  padding: 0;
-  margin: 0;*/
-}
 
 @media (max-width: 768px) {
   #header #logo h1 {
@@ -482,10 +479,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-container .background {
-  min-height: 300px;
+  min-height: 350px;
   background: url(../img/soslogo.png) center top no-repeat;
   background-size: contain;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 #about .about-container .content {
@@ -527,7 +525,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about .about-container .icon-box .icon i {
   color: #FF3333;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 #about .about-container .icon-box .title {
