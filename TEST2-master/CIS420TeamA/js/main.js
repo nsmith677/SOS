@@ -102,7 +102,7 @@ jQuery(document).ready(function( $ ) {
 
   // Smooth scroll on page hash links
   $('a[href*="#"]:not([href="#"])').on('click', function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+    if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
 
       var target = $(this.hash);
       if (target.length) {
