@@ -32,6 +32,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   padding: 0;
+  color: #FF3333;
 }
 
 /* Prelaoder */
@@ -110,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header #logo h1 a, #header #logo h1 a:hover {
-  color: #FF3333;
+  color: white;
 }
 
 
@@ -124,7 +125,8 @@ h1, h2, h3, h4, h5, h6 {
 }
  
 #header.header-fixed {
-    background: rgba(52, 59, 64, 0.5);
+    /*background: rgba(52, 59, 64, 0.5);*/
+    background: #FF3333;
     padding: 20px 0;
     height: 72px;
     transition: all 0.5s;
@@ -154,7 +156,7 @@ h1, h2, h3, h4, h5, h6 {
     object-fit: cover;
 }
 
-#carousel-caption h1 .d-none .d-md-block {
+#carousel-caption {
     font-size: 32px;
     font-family: "Poppins", sans-serif;
     color: #FF3333;
@@ -575,7 +577,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     left: calc(50% - 36px);
     transition: 0.2s;
     display: inline-block;
-    border: 6px solid #FF3333;
+    border: 2px solid #FF3333;
 }
 
 #getinvolved .icon a {
@@ -588,7 +590,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #getinvolved .icon i {
     color: #FF3333;
-    font-size: 24px;
+    font-size: 36px;
 }
 
 #getinvolved .box:hover .icon i {
