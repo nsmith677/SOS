@@ -54,7 +54,7 @@ jQuery(document).ready(function( $ ) {
       var scrollPos = $(document).scrollTop();
       $('#nav-menu-container a[href^="#"]').each(function () {
           var currLink = $(this);
-          var refElement = $(currLink.attr("href"));
+          var refElement = $(currLink.attr('href'));
           if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
               $('#nav-menu-container a[href^="#"]').parent("li").removeClass("menu-active");
               currLink.parent("li").addClass("menu-active");
