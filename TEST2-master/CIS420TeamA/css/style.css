@@ -120,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 26px;
   }
   #header #logo img {
-    max-height: 40px;
+    max-height: 80px;
   }
 }
  
@@ -189,7 +189,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*--------------------------------------------------------------
 # Navigation Menu
---------------------------------------------------------------
+-------------------------------------------------------------- */
 /* Nav Menu Essentials */
 .nav-menu, .nav-menu * {
   margin: 0;
@@ -285,7 +285,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 30px;
   bottom: 0;
   left: 0;
-  background-color: #FF3333;
+  background-color: #FFFFFF;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
