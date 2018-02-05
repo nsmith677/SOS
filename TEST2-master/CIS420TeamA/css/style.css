@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: #FF6666;
+  color: #FF3333;
 }
 
 a:hover, a:active, a:focus {
@@ -156,15 +156,26 @@ h1, h2, h3, h4, h5, h6 {
     object-fit: cover;
 }
 
-#carousel-caption {
+.carousel-caption h1 {
     font-size: 32px;
     font-family: "Poppins", sans-serif;
-    color: #FF3333;
+    color: white;
     text-transform: uppercase;
     text-align: center;
     font-weight: 700;
     margin-bottom: 5px;
 }
+
+.carousel-caption .social-links a {
+    font-size: 32px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
 
 @media (max-width: 768px) {
   #carousel-caption h1 .d-none .d-md-block {
