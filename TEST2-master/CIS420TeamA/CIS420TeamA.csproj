@@ -193,6 +193,7 @@
     <Compile Include="Controllers\DirectorsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\StaffController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -200,6 +201,7 @@
     <Compile Include="Models\Directors.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Staff.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -321,10 +323,31 @@
     <Content Include="Content\Site.css" />
     <Content Include="img\testimonial.png" />
     <Content Include="img\apple-touch-icon.png" />
+
+    <Content Include="img\beatriz.jpeg" />
     <Content Include="img\calendar.png" />
     <Content Include="img\Doctor.png" />
     <Content Include="img\donateimg.jpg" />
+    <Content Include="img\Erica Sutton.jpg" />
     <Content Include="img\favicon.png" />
+
+    <Content Include="img\Francis.jpeg" />
+    <Content Include="img\jordan.jpg" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\portfolio\app1.jpg" />
+    <Content Include="img\portfolio\app2.jpg" />
+    <Content Include="img\portfolio\app3.jpg" />
+    <Content Include="img\portfolio\card1.jpg" />
+    <Content Include="img\portfolio\card2.jpg" />
+    <Content Include="img\portfolio\card3.jpg" />
+    <Content Include="img\portfolio\logo1.jpg" />
+    <Content Include="img\portfolio\logo2.jpg" />
+    <Content Include="img\portfolio\logo3.jpg" />
+    <Content Include="img\portfolio\web1.jpg" />
+    <Content Include="img\portfolio\web2.jpg" />
+    <Content Include="img\portfolio\web3.jpg" />
+    <Content Include="img\sam.png" />
+
     <Content Include="img\soslogo.png" />
     <Content Include="img\Carousel\pic1.jpg" />
     <Content Include="img\Carousel\pic2.jpg" />
@@ -429,7 +452,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+
+    <Content Include="Views\Staff\Index.cshtml" />
+
     <Content Include="Views\Directors\Index.cshtml" />
+
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
