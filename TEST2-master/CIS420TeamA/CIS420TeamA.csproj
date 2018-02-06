@@ -190,6 +190,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DirectorsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\StaffController.cs" />
@@ -197,6 +198,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Directors.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Staff.cs" />
@@ -319,11 +321,16 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="img\testimonial.png" />
     <Content Include="img\apple-touch-icon.png" />
+
     <Content Include="img\beatriz.jpeg" />
+    <Content Include="img\calendar.png" />
+    <Content Include="img\Doctor.png" />
     <Content Include="img\donateimg.jpg" />
     <Content Include="img\Erica Sutton.jpg" />
     <Content Include="img\favicon.png" />
+
     <Content Include="img\Francis.jpeg" />
     <Content Include="img\jordan.jpg" />
     <Content Include="img\logo.png" />
@@ -340,12 +347,12 @@
     <Content Include="img\portfolio\web2.jpg" />
     <Content Include="img\portfolio\web3.jpg" />
     <Content Include="img\sam.png" />
+
     <Content Include="img\soslogo.png" />
-    <Content Include="img\SOSLogo_navbar.png" />
-    <Content Include="img\SOS\pic1.jpg" />
-    <Content Include="img\SOS\pic2.jpg" />
-    <Content Include="img\SOS\pic3.jpg" />
-    <Content Include="img\SOS\pic4.jpg" />
+    <Content Include="img\Carousel\pic1.jpg" />
+    <Content Include="img\Carousel\pic2.jpg" />
+    <Content Include="img\Carousel\pic3.jpg" />
+    <Content Include="img\Carousel\pic4.jpg" />
     <Content Include="img\team-1.jpg" />
     <Content Include="img\team-2.jpg" />
     <Content Include="img\team-3.jpg" />
@@ -445,7 +452,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+
     <Content Include="Views\Staff\Index.cshtml" />
+
+    <Content Include="Views\Directors\Index.cshtml" />
+
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
