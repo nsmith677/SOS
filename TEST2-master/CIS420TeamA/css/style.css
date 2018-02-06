@@ -462,10 +462,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /*--------------------------------------------------------------
-# Sections
+# Section Header
 --------------------------------------------------------------*/
-/* Sections Header
---------------------------------*/
 .section-header .section-title {
   font-size: 32px;
   color: #FF3333;
@@ -481,9 +479,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #999;
 }
 
-/* About Us Section
---------------------------------*/
-
+/*--------------------------------------------------------------
+# About Us
+--------------------------------------------------------------*/
 #about .about-container .background {
   min-height: 350px;
   background: url(../img/soslogo.png) center top no-repeat;
@@ -553,8 +551,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 14px;
 }
 
-/* Facts Section
---------------------------------*/
+/*--------------------------------------------------------------
+# Facts
+--------------------------------------------------------------*/
 #facts {
   background: #f7f7f7;
   padding: 80px 0 60px 0;
@@ -574,8 +573,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 
-/* Testimonials Section
---------------------------------*/
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
 #testimonials {
   background: #fff;
   padding: 80px 0;
@@ -651,8 +651,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   top: -30px;
 }
 
-/* Get Involved Section
---------------------------------*/
+/*--------------------------------------------------------------
+# Get Involved
+--------------------------------------------------------------*/
 #getinvolved {
   background: #f7f7f7;
   background-size: cover;
@@ -716,8 +717,9 @@ body.mobile-nav-active #mobile-nav-toggle {
     line-height: 24px;
 }
 
-/* Donate Section
---------------------------------*/
+/*--------------------------------------------------------------
+# Donate
+--------------------------------------------------------------*/
 #donate {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/donateimg.jpg) fixed center center;
   background-size: cover;
@@ -746,7 +748,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
     font-weight: 500;
-    /*font-size: 16px;*/
     font-size: 40px;
     letter-spacing: 1px;
     display: inline-block;
@@ -763,10 +764,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 2px solid #FF3333;
 }
 
-/* Calendar Section
---------------------------------*/
+/*--------------------------------------------------------------
+# Calendar
+--------------------------------------------------------------*/
 #calendar {
-  background: #fff;
+  background: #f7f7f7;
   padding: 10px;
 }
 
@@ -776,69 +778,29 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-right: auto;
 }
 
-
-/* Team Section
---------------------------------*/
-#team {
-  background: #fff;
-  padding: 80px 0 60px 0;
+/*--------------------------------------------------------------
+# Get Help
+--------------------------------------------------------------*/
+#gethelp #google-map {
+    height: 300px;
+    margin-bottom: 20px;
 }
 
-#team .member {
-  text-align: center;
-  margin-bottom: 20px;
+#gethelp img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#team .member .pic {
-  margin-bottom: 15px;
-  overflow: hidden;
-  height: 260px;
-}
 
-#team .member .pic img {
-  max-width: 100%;
-}
-
-#team .member h4 {
-  font-weight: 700;
-  margin-bottom: 2px;
-  font-size: 18px;
-}
-
-#team .member span {
-  font-style: italic;
-  display: block;
-  font-size: 13px;
-}
-
-#team .member .social {
-  margin-top: 15px;
-}
-
-#team .member .social a {
-  color: #b3b3b3;
-}
-
-#team .member .social a:hover {
-  color: #FF3333;
-}
-
-#team .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
-}
-
-/* Social Media Section
---------------------------------*/
+/*--------------------------------------------------------------
+# Social Media
+--------------------------------------------------------------*/
 #socialmedia {
-  background: #f7f7f7;
+  background: white;
   padding: 80px 0 40px 0;
 }
 
-#socialmedia #google-map {
-  height: 300px;
-  margin-bottom: 20px;
-}
 
 #socialmedia .info {
   color: #333333;
@@ -852,15 +814,4 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 30px 0;
   color: #fff;
   font-size: 14px;
-}
-
-#footer .copyright {
-  text-align: center;
-}
-
-#footer .c#FF3333its {
-  padding-top: 10px;
-  text-align: center;
-  font-size: 13px;
-  color: #ccc;
 }
