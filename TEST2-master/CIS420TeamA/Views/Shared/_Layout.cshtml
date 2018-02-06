@@ -51,21 +51,21 @@
 
                     <!--About Us Nav-->
                     <li class="menu-has-children">
-                        @Html.ActionLink("About Us", "Index", "Home")
+                        <a href="@Url.Action("Index", "Home")#about">About Us</a>
                         <ul>
                             <!--Replaced directors and staff links-->
                             <li>@Html.ActionLink("Board of Directors", "Index", "Directors")</li>
                             <li>@Html.ActionLink("Staff", "Index", "Staff")</li>
 
-                            <li><a href="#testimonials">Patient Testimonials</a></li>
-                            <li><a href="#stories">Our Stories</a></li>
+                            <li><a href="@Url.Action("Index", "Home")#testimonials">Patient Testimonials</a></li>
+                            <li><a href="@Url.Action("Index", "Home")#stories">Our Stories</a></li>
 
                         </ul>
                     </li>
 
                     <!-- Get Involved Nav -->
                     <li class="menu-has-children">
-                        <a href="#getinvolved">Get Involved</a>
+                        <a href="@Url.Action("Index", "Home")#getinvolved">Get Involved</a>
                         <ul>
                             <li><a href="https://savannahjames.typeform.com/to/i7DE5N" target="_blank">Physician Volunteer Application</a></li>
                             <li><a href="https://savannahjames.typeform.com/to/dx25pj" target="_blank">Non-Physician Volunteer Application</a></li>
@@ -78,14 +78,14 @@
 
                     <!-- Get Help Nav-->
                     <li class="menu-has-children">
-                        <a href="#gethelp">Get Help</a>
+                        <a href="@Url.Action("Index", "Home")#gethelp">Get Help</a>
                         <ul>
                             <li><a href="partnerclinics">Partner Clinics</a></li>
                         </ul>
                     </li>
 
                     <!-- Events Nav -->
-                    <li><a href="#calendar">Events</a></li>
+                    <li><a href="@Url.Action("Index", "Home")#calendar">Events</a></li>
 
                     <!-- Donate Nav -->
                     <li><a target="_blank" href="https://soslouisville.kindful.com/">Donate</a></li>
