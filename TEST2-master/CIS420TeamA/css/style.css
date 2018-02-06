@@ -163,13 +163,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .carousel-caption h1 {
-    font-size: 32px;
+    font-size: 44px;
     font-family: "Poppins", sans-serif;
     color: white;
     text-transform: uppercase;
     text-align: center;
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 5px;
+    text-shadow: 4px 4px 5px black;
 }
 
 .carousel-caption .social-links a {
