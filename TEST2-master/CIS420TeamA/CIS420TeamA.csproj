@@ -320,8 +320,12 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="img\apple-touch-icon.png" />
+    <Content Include="img\beatriz.jpeg" />
     <Content Include="img\donateimg.jpg" />
+    <Content Include="img\Erica Sutton.jpg" />
     <Content Include="img\favicon.png" />
+    <Content Include="img\Francis.jpeg" />
+    <Content Include="img\jordan.jpg" />
     <Content Include="img\logo.png" />
     <Content Include="img\portfolio\app1.jpg" />
     <Content Include="img\portfolio\app2.jpg" />
@@ -335,6 +339,7 @@
     <Content Include="img\portfolio\web1.jpg" />
     <Content Include="img\portfolio\web2.jpg" />
     <Content Include="img\portfolio\web3.jpg" />
+    <Content Include="img\sam.png" />
     <Content Include="img\soslogo.png" />
     <Content Include="img\SOSLogo_navbar.png" />
     <Content Include="img\SOS\pic1.jpg" />
