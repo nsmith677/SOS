@@ -57,20 +57,25 @@
 
             <nav id="nav-menu-container">
                 <ul class="nav-menu">
-
+                    <!--Home Nave-->
                     <li id="home" class="menu-active"><a href="#main">Home</a></li>
-                    <li class="menu-has-children"> 
+
+                    <!--About Us Nav-->
+                    <li class="menu-has-children">
                         <a href="#about">About Us</a>
                         <ul>
-                          <!--Replaced directors and staff links-->
-                            <li><a href="#directors">Board of Directors</a></li>
+                            <!--Replaced directors and staff links-->
+                            <li><a href="directors">Board of Directors</a></li>
                             <li>@Html.ActionLink("Staff", "Index", "Staff")</li>
 
-                            <li><a href="#testimonials">Patient Testimonials</a></li>
-                            <li><a href="#stories">Our Stories</a></li>
+                            <li><a href="testimonials">Patient Testimonials</a></li>
+                            <li><a href="stories">Our Stories</a></li>
 
                         </ul>
                     </li>
+
+                    <!-- Donate Nav -->
+                    <li><a target="_blank" href="#donate">Donate</a></li>
 
                     <!-- Get Involved Nav -->
                     <li class="menu-has-children">
@@ -89,15 +94,12 @@
                     <li class="menu-has-children">
                         <a href="#gethelp">Get Help</a>
                         <ul>
-                            <li><a href="#partnerclinics">Partner Clinics</a></li>
+                            <li><a href="partnerclinics">Partner Clinics</a></li>
                         </ul>
                     </li>
 
                     <!-- Events Nav -->
-                    <li><a href="#portfolio">Events</a></li>
-
-                    <!-- Donate Nav -->
-                    <li><a target="_blank" href="https://soslouisville.kindful.com/">Donate</a></li>
+                    <li><a href="#calendar">Events</a></li>
 
                     <!-- Contact Us Nav -->
                     <li><a href="#contact">Contact Us</a></li>
@@ -207,136 +209,137 @@
                 </div>
 
             </div>
+
+            <!--==========================
+          Facts Section
+        ============================-->
+            <div id="facts">
+                <div class="container wow fadeIn">
+                    <div class="section-header">
+                        <h3 class="section-title">Our Impact</h3>
+                        <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                    </div>
+                    <div class="row counters">
+
+                        <div class="col-lg-3 col-6 text-center">
+                            <span data-toggle="counter-up">389</span>
+                            <p>Patients</p>
+                        </div>
+
+                        <div class="col-lg-3 col-6 text-center">
+                            <span data-toggle="counter-up">246</span>
+                            <p>Surgeries</p>
+                        </div>
+
+                        <div class="col-lg-3 col-6 text-center">
+                            <span data-toggle="counter-up">1,463</span>
+                            <p>Hours Of Support</p>
+                        </div>
+
+                        <div class="col-lg-3 col-6 text-center">
+                            <span data-toggle="counter-up">49</span>
+                            <p>Volunteers</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div><!-- #facts -->
+            <!--==========================
+          Testimonials Section
+        ============================-->
+            <div id="testimonials">
+                <div class="container wow fadeInUp">
+                    <div class="section-header">
+                        <h3 class="section-title">Testimonials</h3>
+                        <p class="section-description">Read about the impact we have had on individuals within the Louisville community.</p>
+                    </div>
+
+                    <div class="row" id="testimonials-wrapper">
+                        <div class="col-lg-3 col-md-6 testimonials-item filter-app">
+                            <a href="">
+                                <img src="~/img/testimonial.png" alt="">
+                                <div class="details">
+                                    <h4>Testimonial 1</h4>
+                                    <span>Story 1</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 testimonials-item filter-web">
+                            <a href="">
+                                <img src="~/img/testimonial.png" alt="">
+                                <div class="details">
+                                    <h4>Testimonial 2</h4>
+                                    <span>Story 2</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 testimonials-item filter-app">
+                            <a href="">
+                                <img src="~/img/testimonial.png" alt="">
+                                <div class="details">
+                                    <h4>Testimonial 3</h4>
+                                    <span>Story 3</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 testimonials-item filter-card">
+                            <a href="">
+                                <img src="~/img/testimonial.png" alt="">
+                                <div class="details">
+                                    <h4>Testimonial 4</h4>
+                                    <span>Story 4</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 testimonials-item filter-card">
+                            <a href="">
+                                <img src="~/img/testimonial.png" alt="">
+                                <div class="details">
+                                    <h4>Testimonial 5</h4>
+                                    <span>Story 5</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 testimonials-item filter-web">
+                            <a href="">
+                                <img src="~/img/testimonial.png" alt="">
+                                <div class="details">
+                                    <h4>Testimonial 6</h4>
+                                    <span>Story 6</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 testimonials-item filter-card">
+                            <a href="">
+                                <img src="~/img/testimonial.png" alt="">
+                                <div class="details">
+                                    <h4>Testimonial 7</h4>
+                                    <span>Story 7</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 testimonials-item filter-app">
+                            <a href="">
+                                <img src="~/img/testimonial.png" alt="">
+                                <div class="details">
+                                    <h4>Testimonial 8</h4>
+                                    <span>Story 8</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div><!-- #portfolio -->
         </section><!-- #about -->
-        <!--==========================
-      Facts Section
-    ============================-->
-        <section id="facts">
-            <div class="container wow fadeIn">
-                <div class="section-header">
-                    <h3 class="section-title">Our Impact</h3>
-                    <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-                </div>
-                <div class="row counters">
-
-                    <div class="col-lg-3 col-6 text-center">
-                        <span data-toggle="counter-up">389</span>
-                        <p>Patients</p>
-                    </div>
-
-                    <div class="col-lg-3 col-6 text-center">
-                        <span data-toggle="counter-up">246</span>
-                        <p>Surgeries</p>
-                    </div>
-
-                    <div class="col-lg-3 col-6 text-center">
-                        <span data-toggle="counter-up">1,463</span>
-                        <p>Hours Of Support</p>
-                    </div>
-
-                    <div class="col-lg-3 col-6 text-center">
-                        <span data-toggle="counter-up">49</span>
-                        <p>Volunteers</p>
-                    </div>
-
-                </div>
-
-            </div>
-        </section><!-- #facts -->
-        <!--==========================
-      Testimonials Section
-    ============================-->
-        <section id="testimonials">
-            <div class="container wow fadeInUp">
-                <div class="section-header">
-                    <h3 class="section-title">Testimonials</h3>
-                    <p class="section-description">Read about the impact we have had on individuals within the Louisville community.</p>
-                </div>
-
-                <div class="row" id="testimonials-wrapper">
-                    <div class="col-lg-3 col-md-6 testimonials-item filter-app">
-                        <a href="">
-                            <img src="~/img/testimonial.png" alt="">
-                            <div class="details">
-                                <h4>Testimonial 1</h4>
-                                <span>Story 1</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 testimonials-item filter-web">
-                        <a href="">
-                            <img src="~/img/testimonial.png" alt="">
-                            <div class="details">
-                                <h4>Testimonial 2</h4>
-                                <span>Story 2</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 testimonials-item filter-app">
-                        <a href="">
-                            <img src="~/img/testimonial.png" alt="">
-                            <div class="details">
-                                <h4>Testimonial 3</h4>
-                                <span>Story 3</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 testimonials-item filter-card">
-                        <a href="">
-                            <img src="~/img/testimonial.png" alt="">
-                            <div class="details">
-                                <h4>Testimonial 4</h4>
-                                <span>Story 4</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 testimonials-item filter-card">
-                        <a href="">
-                            <img src="~/img/testimonial.png" alt="">
-                            <div class="details">
-                                <h4>Testimonial 5</h4>
-                                <span>Story 5</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 testimonials-item filter-web">
-                        <a href="">
-                            <img src="~/img/testimonial.png" alt="">
-                            <div class="details">
-                                <h4>Testimonial 6</h4>
-                                <span>Story 6</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 testimonials-item filter-card">
-                        <a href="">
-                            <img src="~/img/testimonial.png" alt="">
-                            <div class="details">
-                                <h4>Testimonial 7</h4>
-                                <span>Story 7</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 testimonials-item filter-app">
-                        <a href="">
-                            <img src="~/img/testimonial.png" alt="">
-                            <div class="details">
-                                <h4>Testimonial 8</h4>
-                                <span>Story 8</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </section><!-- #portfolio -->
         <!--==========================
     Donate Section
     ============================-->
@@ -414,8 +417,19 @@
 
             </div>
         </section><!-- #Get Involved -->
-
     <!--==========================
+      Get Help Section
+    ============================-->
+        <section id="gethelp">
+            <div class="container wow fadeInUp">
+                <div class="section-header">
+                    <h3 class="section-title">Get Help</h3>
+                    <p class="section-description">See our partner clinics</p>
+                    <img class="col-md-8" src="~/img/get-help.png" /><br /><br />
+                </div>
+            </div>
+        </section>
+        <!--==========================
       Calender Section
     ============================-->
         <section id="calendar">
@@ -427,8 +441,7 @@
                 </div>
             </div>
         </section><!-- #calendar -->
-
-    <!--==========================
+        <!--==========================
       Social Media Section
     ============================-->
         <section id="socialmedia">
