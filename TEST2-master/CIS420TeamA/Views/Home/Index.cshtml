@@ -5,7 +5,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--this new test-->
     <meta charset="utf-8">
     <title>Surgery on Sunday Louisville</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -30,7 +29,6 @@
     <link href="~/css/style.css" rel="stylesheet">
 
     <!-- Photo Carousel Files-->
-    @*<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">*@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -43,93 +41,6 @@
 </head>
 
 <body>
-
-    <!--==========================
-    Header
-    ============================-->
-    <header id="header">
-        <div class="container">
-
-            <div id="logo" class="pull-left">
-                <a href="#main"><img src="~/img/Doctor.png" /></a>
-                <h1><a href="#main">SOS Lou</a></h1>
-            </div>
-
-            <nav id="nav-menu-container">
-                <ul class="nav-menu">
-                    <!--Home Nave-->
-                    <li id="home" class="menu-active"><a href="#main">Home</a></li>
-
-                    <!--About Us Nav-->
-                    <li class="menu-has-children">
-                        <a href="#about">About Us</a>
-                        <ul>
-                            <!--Replaced directors and staff links-->
-                            <li><a href="#directors">Board of Directors</a></li>
-                            <li>@Html.ActionLink("Staff", "Index", "Staff")</li>
-
-                            <li><a href="#testimonials">Patient Testimonials</a></li>
-                            <li><a href="#stories">Our Stories</a></li>
-
-                        </ul>
-                    </li>
-
-                    <!-- Donate Nav -->
-                    <li><a target="_blank" href="#donate">Donate</a></li>
-
-                    <!-- Get Involved Nav -->
-                    <li class="menu-has-children">
-                        <a href="#getinvolved">Get Involved</a>
-                        <ul>
-                            <li><a href="https://savannahjames.typeform.com/to/i7DE5N" target="_blank">Physician Volunteer Application</a></li>
-                            <li><a href="https://savannahjames.typeform.com/to/dx25pj" target="_blank">Non-Physician Volunteer Application</a></li>
-                            <li><a href="https://savannahjames.typeform.com/to/V8ayYJ" target="_blank">Non-Clinical Volunteer Application</a></li>
-                            <li><a href="https://savannahjames.typeform.com/to/V6fiB1" target="_blank">Medical Interpreter Volunteer Application</a></li>
-                            <li><a href="https://savannahjames.typeform.com/to/e7fP9h" target="_blank">Volunteer Comment Form</a></li>
-                            <li><a href="https://savannahjames.typeform.com/to/dONmAG" target="_blank">Patient Referral</a></li>
-                        </ul>
-                    </li>
-
-                    <!-- Get Help Nav-->
-                    <li class="menu-has-children">
-                        <a href="#gethelp">Get Help</a>
-                        <ul>
-                            <li><a href="partnerclinics">Partner Clinics</a></li>
-                        </ul>
-                    </li>
-
-                    <!-- Events Nav -->
-                    <li><a href="#calendar">Events</a></li>
-
-                    <!-- Contact Us Nav -->
-                    <li><a href="#contact">Contact Us</a></li>
-
-                    <!-- Login Nav -->
-                    <li class="menu-has-children">
-                        <a href="">Login</a>
-                        <ul>
-                            <li><a href="#">Administrator</a></li>
-                            <li><a href="#">Staff</a></li>
-                        </ul>
-                    </li>
-
-                    <!-- Google Translate -->
-                    <li>
-                        <a href="#">
-                            <div id="google_translate_element"></div>
-                            <script type="text/javascript">
-                                function googleTranslateElementInit() {
-                                    new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'ar,en,es,fr,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
-                                }
-                            </script>
-                            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-                        </a>
-                    </li>
-
-                </ul>
-            </nav><!-- #nav-menu-container -->
-        </div>
-    </header><!-- #header -->
     <!--==========================
       Photo Carousel Section
     ============================-->
@@ -172,7 +83,7 @@
         </section>
     <main id="main">
 
-        <!--==========================
+    <!--==========================
       About Us Section
     ============================-->
         <section id="about">
@@ -188,13 +99,13 @@
 
                         <div class="icon-box wow fadeInUp">
                             <div class="icon"><i class="fa fa-user"></i></div>
-                            <h4 class="title"><a href="#bod">Board of Directors</a></h4>
-                            <p class="description">Click here to learn more about our Board of Directors that help make SOS possible.</p>
+                            <h4 class="title"><a href="#bod">@Html.ActionLink("Board of Directors", "Index", "Directors")</a></h4>
+                            <p class="description">Click here to learn more about our Board of Directors that help make SOS a reality.</p>
                         </div>
 
                         <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
                             <div class="icon"><i class="fa fa-quote-right"></i></div>
-                            <h4 class="title"><a href="#pt">Patient Testimonials</a></h4>
+                            <h4 class="title"><a href="#testimonials">Patient Testimonials</a></h4>
                             <p class="description">Click here to read testimonials from individuals we have impacted.</p>
                         </div>
 
@@ -211,14 +122,14 @@
 
             </div>
 
-            <!--==========================
+        <!--==========================
           Facts Section
         ============================-->
             <div id="facts">
                 <div class="container wow fadeIn">
                     <div class="section-header">
                         <h3 class="section-title">Our Impact</h3>
-                        <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                        <p class="section-description">Our results are shown through real people. Here are some statistics.</p>
                     </div>
                     <div class="row counters">
 
@@ -246,7 +157,7 @@
 
                 </div>
             </div><!-- #facts -->
-            <!--==========================
+        <!--==========================
           Testimonials Section
         ============================-->
             <div id="testimonials">
@@ -471,81 +382,6 @@
             </div>
         </section>
     </main>
-
-
-    <!--==========================
-      Footer
-    ============================-->
-    <footer id="footer">
-
-        <div class="full-width">
-            <div class="address-bar">
-                <div class="container-fixed">
-                    <div class="row justify-content-center">
-                        <div class="col-xs-12 col-sm-4 col-md-3">
-                            <p>
-                                <a href="#about">ABOUT US</a><br><br>
-                                <a href="#getinvolved">GET INVOLVED</a><br><br>
-                                <a href="#gethelp">GET HELP</a><br><br>
-                                <a href="#calendar">EVENTS</a><br><br>
-                            </p>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-md-3">
-                            <img class="col-md-8" src="~/img/soslogo.png"><br><br>
-                            <p style="margin-left:35px">
-                                FOLLOW US:
-                                <a href="https://twitter.com/soslouisville" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
-                                <a href="https://www.facebook.com/SurgeryonSundayLouisville" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
-                                <a href="https://www.instagram.com/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
-                                <a href="https://www.linkedin.com/" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                            </p>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-md-3">
-                            <p>
-                                CONTACT US<br><br>
-                                <i class="fa fa-dropbox"></i> P.O. BOX 4757<br>
-                                Louisville, KY 40204 <br><br>
-                                <i class="fa fa-envelope"></i> info@soslouisville.org <br><br>
-                                <i class="fa fa-phone"></i> 502-242-2089
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer><!-- #footer -->
-
-    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-
-    <!-- JavaScript Libraries -->
-    <script src="~/lib/jquery/jquery.min.js"></script>
-    <script src="../../lib/jquery/jquery-migrate.min.js"></script>
-    <script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../../lib/easing/easing.min.js"></script>
-    <script src="../../lib/wow/wow.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
-
-    <script src="../../lib/waypoints/waypoints.min.js"></script>
-    <script src="../../lib/counterup/counterup.min.js"></script>
-    <script src="../../lib/superfish/hoverIntent.js"></script>
-    <script src="../../lib/superfish/superfish.min.js"></script>
-
-    <!-- Contact Form JavaScript File -->
-    <script src="../../contactform/contactform.js"></script>
-
-    <!-- Template Main Javascript File -->
-    <script src="../../js/main.js"></script>
-
-    <!-- Facebook -->
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
-      fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
 
 </body>
 </html>
