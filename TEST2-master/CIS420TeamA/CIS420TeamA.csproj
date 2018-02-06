@@ -332,19 +332,6 @@
     <Content Include="img\favicon.png" />
     <Content Include="img\Francis.jpeg" />
     <Content Include="img\jordan.jpg" />
-    <Content Include="img\logo.png" />
-    <Content Include="img\portfolio\app1.jpg" />
-    <Content Include="img\portfolio\app2.jpg" />
-    <Content Include="img\portfolio\app3.jpg" />
-    <Content Include="img\portfolio\card1.jpg" />
-    <Content Include="img\portfolio\card2.jpg" />
-    <Content Include="img\portfolio\card3.jpg" />
-    <Content Include="img\portfolio\logo1.jpg" />
-    <Content Include="img\portfolio\logo2.jpg" />
-    <Content Include="img\portfolio\logo3.jpg" />
-    <Content Include="img\portfolio\web1.jpg" />
-    <Content Include="img\portfolio\web2.jpg" />
-    <Content Include="img\portfolio\web3.jpg" />
     <Content Include="img\sam.png" />
     <Content Include="img\soslogo.png" />
     <Content Include="img\Carousel\pic1.jpg" />
@@ -405,6 +392,7 @@
     <Content Include="bin\roslyn\vbc.exe.config" />
     <Content Include="bin\roslyn\vbc.rsp" />
     <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
+    <None Include="Properties\PublishProfiles\dev.cis420.net - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -416,7 +404,9 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -455,6 +445,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="img\portfolio\" />
     <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <ItemGroup>
