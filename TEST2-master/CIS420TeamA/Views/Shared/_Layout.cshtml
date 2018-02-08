@@ -40,7 +40,7 @@
         <div class="container">
 
             <div id="logo" class="pull-left">
-                <a href="#main"><img src="~/img/WhiteLettersLogoSOS.png" /></a>
+                <a href="@Url.Action("Index", "Home")#main"><img src="~/img/WhiteLettersLogoSOS.png" /></a>
                 @*<h1><a href="#main">SOS Lou</a></h1>*@
             </div>
 
@@ -122,43 +122,65 @@
     <!--==========================
       Footer
     ============================-->
+
     <footer id="footer">
 
-        <div class="full-width">
-            <div class="address-bar">
-                <div class="container-fixed">
-                    <div class="row justify-content-center">
-                        <div class="col-xs-12 col-sm-4 col-md-3">
-                            <p>
-                                <a href="#about">ABOUT US</a><br><br>
-                                <a href="#getinvolved">GET INVOLVED</a><br><br>
-                                <a href="#gethelp">GET HELP</a><br><br>
-                                <a href="#calendar">EVENTS</a><br><br>
-                            </p>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-md-3">
-                            <img class="col-md-8" src="~/img/RedLetterLogoSOS.png"><br><br>
-                            <p>
-                                <a href="https://twitter.com/soslouisville" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
-                                <a href="https://www.facebook.com/SurgeryonSundayLouisville" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
-                                <a href="https://www.instagram.com/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
-                                <a href="https://www.linkedin.com/" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                            </p>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-md-3">
-                            <p>
-                                CONTACT US<br><br>
-                                <i class="fa fa-dropbox"></i> P.O. BOX 4757<br>
-                                Louisville, KY 40204 <br><br>
-                                <i class="fa fa-envelope"></i> info@soslouisville.org <br><br>
-                                <i class="fa fa-phone"></i> 502-242-2089
-                            </p>
-                        </div>
+        <!--Footer Links-->
+        <div class="container">
+            <div class="row my-4">
+                <!--First column-->
+                <div class="col-md-4 col-lg-4">
+                    <p><img class="col-md-8" src="~/img/WhiteLettersLogoSOS.png"></p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident
+                        voluptate esse quasi, veritatis totam voluptas nostrum.
+                    </p>
+                </div>
+                <!--/.First column-->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!--Second column-->
+                <div class="col-md-2 col-lg-2 ml-auto">
+                    <h5>Useful Links</h5>                    
+                        <p><a href="@Url.Action("Index", "Home")#about">ABOUT US</a></p>
+                        <p><a href="@Url.Action("Index", "Home")#getinvolved">GET INVOLVED</a></p>
+                        <p><a href="@Url.Action("Index", "Home")#gethelp">GET HELP</a></p>
+                        <p><a href="@Url.Action("Index", "Home")#calendar">EVENTS</a></p>                    
+                </div>
+                <!--/.Second column-->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!--Third column-->
+                <div class="col-md-4 col-lg-3">
+                    <h5>Contact Us</h5>
+                    <!--Info-->
+                    <p><i class="fa fa-dropbox mr-3"></i> P.O. BOX 4757<br />Louisville, KY 40204</p>
+                    <p><i class="fa fa-envelope mr-3"></i> info@soslouisville.org</p>
+                    <p><i class="fa fa-phone mr-3"></i> 502-242-2089</p>
+                </div>
+                <!--/.Third column-->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!--Fourth column-->
+                <div class="col-md-2 col-lg-2 text-center">
+                    <h5 class="title mb-4 font-bold">Follow Us</h5>
+                    <!--Social buttons-->
+                    <div>
+                        <a href="https://twitter.com/soslouisville" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/SurgeryonSundayLouisville" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
                     </div>
                 </div>
+                <!--/Fourth column-->
             </div>
         </div>
-    </footer><!-- #footer -->
+        <!--/.Footer Links-->
+    </footer>
+    <!--/.Footer-->
 
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
@@ -168,7 +190,7 @@
     <script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../../lib/easing/easing.min.js"></script>
     <script src="../../lib/wow/wow.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCkU6qfQnmf8bpY6M-fN5PeZTYCo042Oo"></script>
 
     <script src="../../lib/waypoints/waypoints.min.js"></script>
     <script src="../../lib/counterup/counterup.min.js"></script>
@@ -185,12 +207,12 @@
     <div id="fb-root"></div>
     <script>
         (function (d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0];
-                    if (d.getElementById(id)) return;
-                    js = d.createElement(s); js.id = id;
-                    js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
-                    fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
     </script>
 </body>
 </html>
