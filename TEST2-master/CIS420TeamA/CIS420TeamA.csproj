@@ -321,7 +321,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="img\BlackLettersLogoSOS.png" />
     <Content Include="img\get-help.png" />
+    <Content Include="img\RedLetterLogoSOS.png" />
     <Content Include="img\testimonial.png" />
     <Content Include="img\apple-touch-icon.png" />
     <Content Include="img\beatriz.jpeg" />
@@ -342,6 +344,7 @@
     <Content Include="img\team-2.jpg" />
     <Content Include="img\team-3.jpg" />
     <Content Include="img\team-4.jpg" />
+    <Content Include="img\WhiteLettersLogoSOS.png" />
     <Content Include="js\main.js" />
     <Content Include="lib\animate\animate.css" />
     <Content Include="lib\animate\animate.min.css" />
