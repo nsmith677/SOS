@@ -742,7 +742,7 @@ body.mobile-nav-active {
         color: #fff;
     }
 
-@media (min-width: 769px) {
+@media (min-width: 1024px) {
     #donate .donate-btn-container {
         display: flex;
         align-items: center;
