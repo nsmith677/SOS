@@ -23,11 +23,16 @@ namespace CIS420TeamA.Models
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
+
         }
 
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet<Volunteer> Volunteer { get; set; }
+
+
     }
 }
