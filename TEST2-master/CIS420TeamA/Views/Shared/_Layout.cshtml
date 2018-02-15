@@ -41,7 +41,6 @@
 
             <div id="logo" class="pull-left">
                 <a href="@Url.Action("Index", "Home")#main"><img src="~/img/WhiteLettersLogoSOS.png" /></a>
-                @*<h1><a href="#main">SOS Lou</a></h1>*@
             </div>
 
             <nav id="nav-menu-container">
@@ -90,14 +89,7 @@
                     <li><a target="_blank" href="https://soslouisville.kindful.com/">Donate</a></li>
 
                     <!-- Login Nav -->
-                    <li class="menu-has-children">
-                        <a href="">Login</a>
-                        <ul>
-                            <li><a href="#">Administrator</a></li>
-                            <li><a href="#">Staff</a></li>
-                        </ul>
-                    </li>
-
+                    <li><a href="#main" onclick="@Url.Action("Index", "Home")">Login</a></li>
                     <!-- Google Translate -->
                     <li>
                         <a href="#">

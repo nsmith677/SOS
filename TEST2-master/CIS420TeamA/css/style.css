@@ -95,33 +95,21 @@ h1, h2, h3, h4, h5, h6 {
     background-color: rgba(255, 51, 51, 0.7);
 }
 
-    #header #logo {
-        float: left;
-    }
+#header #logo {
+    float: left;
+}
 
-        #header #logo h1 {
-            font-size: 36px;
-            margin: 0;
-            line-height: 1;
-            font-family: "Poppins", sans-serif;
-            font-weight: 700;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            position: relative;
-            bottom: 43px;
-        }
+#header #logo h1 a, #header #logo h1 a:hover {
+    color: white;
+}
 
-            #header #logo h1 a, #header #logo h1 a:hover {
-                color: white;
-            }
-
-        #header #logo img {
-            position: relative;
-            height: auto;
-            max-width: 140px;
-            right: 50px;
-            bottom: 18px;
-        }
+#header #logo img {
+    position: relative;
+    height: auto;
+    max-width: 140px;
+    right: 50px;
+    bottom: 18px;
+}
 
 @media (max-width: 1024px) {
     #header #logo h1 {
@@ -808,9 +796,9 @@ body.mobile-nav-active {
 }
 
 
-    #socialmedia .info {
-        color: #333333;
-    }
+#socialmedia .info {
+    color: #333333;
+}
 
 /*--------------------------------------------------------------
 # Footer
