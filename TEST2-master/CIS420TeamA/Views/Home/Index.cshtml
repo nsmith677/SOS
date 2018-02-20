@@ -84,11 +84,11 @@
         </section>
     <main id="main">
 
-    <!--==========================
+        <!--==========================
       About Us Section
     ============================-->
         <section id="about">
-        <br><hr><br>
+            <br><hr><br>
             <div class="container">
                 <div class="row about-container">
 
@@ -123,7 +123,7 @@
 
             </div>
 
-        <!--==========================
+            <!--==========================
           Facts Section
         ============================-->
             <div id="facts">
@@ -158,7 +158,7 @@
 
                 </div>
             </div><!-- #facts -->
-        <!--==========================
+            <!--==========================
           Testimonials Section
         ============================-->
             <div id="testimonials">
@@ -253,7 +253,7 @@
                 </div>
             </div><!-- #portfolio -->
         </section><!-- #about -->
-    <!--==========================
+        <!--==========================
     Donate Section
     ============================-->
         <section id="donate">
@@ -270,7 +270,7 @@
 
             </div>
         </section><!-- #call-to-action -->
-    <!--==========================
+        <!--==========================
       Get Involved Section
     ============================-->
         <section id="getinvolved">
@@ -330,10 +330,10 @@
 
             </div>
         </section><!-- #Get Involved -->
-    <!--==========================
+        <!--==========================
       Get Help Section
     ============================-->
-        <section id="gethelp">
+        @*<section id="gethelp">
             <div class="container wow fadeInUp">
                 <div class="section-header">
                     <h3 class="section-title">Get Help</h3>
@@ -341,51 +341,77 @@
                     <img class="col-md-8" src="~/img/get-help.png" /><br /><br />
                 </div>
             </div>
+        </section>*@
+
+        <section id="gethelp">
+            <br><hr><br>
+            <div class="container">
+                <div class="row gethelp-container">
+
+                    <div class="col-lg-6 content order-lg-1 order-2">
+                        <h2 class="title">Get Help</h2>
+                        <p>
+                            Surgery on Sunday Louisville, Inc. (SOSL) partners with several clinics in the Greater Louisville area to ensure that our patients have access to quality care. All SOSL patients are required to have medical homes that is, they must have a medical center they can regularly go to in order to receive primary care. If you are a patient who is in need of SOSL services and do not have a medical home, please contact one of the below clinics and they will be happy to assist you. Each clinic is different, but you may qualify for free or sliding-scale-fee care depending on your financial situation.
+                        </p>
+
+                        <div class="icon-box wow fadeInUp">
+                            <div class="icon"><i class="fa fa-info"></i></div>
+                            <h4 class="title"><a href="#gethelp">@Html.ActionLink("Partner Clinics", "Index", "Home")</a></h4>
+                            <p class="description">Click here for more information on our partner clinics.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6 background order-lg-2 order-1 wow fadeInRight"></div>
+                </div>
+
+            </div>
             <div id="google-map" data-latitude="38.2527" data-longitude="-85.7585"></div>
         </section>
-    <!--==========================
-    Calender Section
-    ============================-->
-        <section id="calendar">
-            <div class="container wow fadeInUp">
-                <div class="section-header">
-                    <h3 class="section-title">Calendar</h3>
-                    <p class="section-description">Check out our upcoming events!</p>
-                    <img class="col-md-8" src="~/img/calendar.png"><br><br>
-                </div>
-            </div>
-        </section><!-- #calendar -->
-    <!--==========================
-      Social Media Section
-    ============================-->
-        <section id="socialmedia">
-            <div class="container wow fadeInUp">
-                <div class="section-header">
-                    <h3 class="section-title">Social Media</h3>
-                    <p class="section-description">Below are our social media sites, feel free to give us a follow!</p>
-                </div>
-            </div>
 
-            <div class="container wow fadeInUp">
-                <div class="row justify-content-center">
-
-                    <div class="col-lg-3 col-md-4">
-                        <a class="twitter-timeline" href="https://twitter.com/soslouisville?ref_src=twsrc%5Etfw" data-width="400" data-height="500">Tweets by soslouisville</a>
-                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <!--==========================
+        Calender Section
+        ============================-->
+            <section id="calendar">
+                <div class="container wow fadeInUp">
+                    <div class="section-header">
+                        <h3 class="section-title">Calendar</h3>
+                        <p class="section-description">Check out our upcoming events!</p>
+                        <img class="col-md-8" src="~/img/calendar.png"><br><br>
                     </div>
-
-                    <div class="col-lg-3 col-md-4">
-                        <div class="fb-page" data-href="https://www.facebook.com/SurgeryonSundayLouisville" data-tabs="timeline" data-width="400" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/SurgeryonSundayLouisville" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/SurgeryonSundayLouisville">Surgery on Sunday Louisville</a></blockquote></div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-4">
-                        <a href="https://instawidget.net/v/user/sos_louisville" id="link-7372b08dd07bfe09b10d01bd14c6d6a5e49513c5fc00dab1e538d7a07fa0afc0"></a>
-                        <script src="https://instawidget.net/js/instawidget.js?u=7372b08dd07bfe09b10d01bd14c6d6a5e49513c5fc00dab1e538d7a07fa0afc0&width=400px"></script>
-                    </div>
-
                 </div>
-            </div>
-        </section>
+            </section><!-- #calendar -->
+            <!--==========================
+          Social Media Section
+        ============================-->
+            <section id="socialmedia">
+                <div class="container wow fadeInUp">
+                    <div class="section-header">
+                        <h3 class="section-title">Social Media</h3>
+                        <p class="section-description">Below are our social media sites, feel free to give us a follow!</p>
+                    </div>
+                </div>
+
+                <div class="container wow fadeInUp">
+                    <div class="row justify-content-center">
+
+                        <div class="col-lg-3 col-md-4">
+                            <a class="twitter-timeline" href="https://twitter.com/soslouisville?ref_src=twsrc%5Etfw" data-width="400" data-height="500">Tweets by soslouisville</a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4">
+                            <div class="fb-page" data-href="https://www.facebook.com/SurgeryonSundayLouisville" data-tabs="timeline" data-width="400" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/SurgeryonSundayLouisville" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/SurgeryonSundayLouisville">Surgery on Sunday Louisville</a></blockquote></div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4">
+                            <a href="https://instawidget.net/v/user/sos_louisville" id="link-7372b08dd07bfe09b10d01bd14c6d6a5e49513c5fc00dab1e538d7a07fa0afc0"></a>
+                            <script src="https://instawidget.net/js/instawidget.js?u=7372b08dd07bfe09b10d01bd14c6d6a5e49513c5fc00dab1e538d7a07fa0afc0&width=400px"></script>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
     </main>
 
 </body>

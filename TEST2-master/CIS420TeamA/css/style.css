@@ -780,11 +780,74 @@ body.mobile-nav-active {
     margin-bottom: 20px;
 }
 
-#gethelp img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+#gethelp .gethelp-container .background {
+    min-height: 350px;
+    background: url(../img/get-help.png) center top no-repeat;
+    background-size: contain;
+    margin-bottom: 30px;
 }
+
+#gethelp .gethelp-container .content {
+    background: #fff;
+}
+
+#gethelp .gethelp-container .title {
+    color: #FF3333;
+    font-weight: 700;
+    font-size: 32px;
+    padding-top: 10px;
+}
+
+@media (max-width: 1024px) {
+    #gethelp .gethelp-container .title {
+        padding-top: 15px;
+    }
+}
+
+#gethelp .gethelp-container p {
+    line-height: 26px;
+}
+
+#gethelp .gethelp-container p:last-child {
+    margin-bottom: 0;
+}
+
+#gethelp .gethelp-container .icon-box {
+    background: #fff;
+    background-size: cover;
+    padding: 0 0 30px 0;
+}
+
+#gethelp .gethelp-container .icon-box .icon {
+    float: left;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#gethelp .gethelp-container .icon-box .icon i {
+    color: #FF3333;
+    font-size: 50px;
+}
+
+#gethelp .gethelp-container .icon-box .title {
+    margin-left: 80px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#gethelp .gethelp-container .icon-box .title a {
+    color: #111;
+}
+
+#gethelp .gethelp-container .icon-box .description {
+    margin-left: 80px;
+    line-height: 24px;
+    font-size: 14px;
+}
+
 
 
 /*--------------------------------------------------------------
