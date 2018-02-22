@@ -36,6 +36,7 @@
     ======================================================= -->
 </head>
 <body>
+    @RenderSection("scripts", required: false)
     <header id="header">
         <div class="container">
 
@@ -89,7 +90,7 @@
                     <li><a target="_blank" href="https://soslouisville.kindful.com/">Donate</a></li>
 
                     <!-- Login Nav -->
-                    <li><a href="#main" onclick="@Url.Action("Index", "Home")">Login</a></li>
+                    <li>@Html.ActionLink("Login", "Login", "Account")</li>
                     <!-- Google Translate -->
                     <li>
                         <a href="#">
@@ -133,11 +134,11 @@
 
                 <!--Second column-->
                 <div class="col-md-2 col-lg-2 ml-auto">
-                    <h5>Useful Links</h5>                    
-                        <p><a href="@Url.Action("Index", "Home")#about">ABOUT US</a></p>
-                        <p><a href="@Url.Action("Index", "Home")#getinvolved">GET INVOLVED</a></p>
-                        <p><a href="@Url.Action("Index", "Home")#gethelp">GET HELP</a></p>
-                        <p><a href="@Url.Action("Index", "Home")#calendar">EVENTS</a></p>                    
+                    <h5>Useful Links</h5>
+                    <p><a href="@Url.Action("Index", "Home")#about">ABOUT US</a></p>
+                    <p><a href="@Url.Action("Index", "Home")#getinvolved">GET INVOLVED</a></p>
+                    <p><a href="@Url.Action("Index", "Home")#gethelp">GET HELP</a></p>
+                    <p><a href="@Url.Action("Index", "Home")#calendar">EVENTS</a></p>
                 </div>
                 <!--/.Second column-->
 
