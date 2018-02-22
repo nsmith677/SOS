@@ -193,6 +193,7 @@
     <Compile Include="Controllers\DirectorsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ResponseController.cs" />
     <Compile Include="Controllers\StaffController.cs" />
     <Compile Include="Controllers\VolunteerController.cs" />
     <Compile Include="Global.asax.cs">
@@ -460,6 +461,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="img\portfolio\" />
     <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="Views\Response\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
