@@ -766,11 +766,11 @@ body.mobile-nav-active {
     padding: 10px;
 }
 
-    #calendar img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+#calendar img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /*--------------------------------------------------------------
 # Get Help
