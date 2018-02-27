@@ -195,6 +195,7 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ResponseController.cs" />
     <Compile Include="Controllers\StaffController.cs" />
+    <Compile Include="Controllers\TestimonialsController.cs" />
     <Compile Include="Controllers\VolunteerController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -205,6 +206,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Testimonials.cs" />
     <Compile Include="Models\Directors.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -458,6 +460,11 @@
     <Content Include="Views\Volunteer\Edit.cshtml" />
     <Content Include="Views\Volunteer\Index.cshtml" />
     <Content Include="Views\Account\AdminLandingPage.cshtml" />
+    <Content Include="Views\Testimonials\Create.cshtml" />
+    <Content Include="Views\Testimonials\Delete.cshtml" />
+    <Content Include="Views\Testimonials\Details.cshtml" />
+    <Content Include="Views\Testimonials\Edit.cshtml" />
+    <Content Include="Views\Testimonials\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
