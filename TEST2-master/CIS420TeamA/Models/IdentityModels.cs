@@ -33,6 +33,6 @@ namespace CIS420TeamA.Models
 
         public DbSet<Volunteer> Volunteer { get; set; }
 
-
+        public System.Data.Entity.DbSet<CIS420TeamA.Models.Testimonials> Testimonials { get; set; }
     }
 }
