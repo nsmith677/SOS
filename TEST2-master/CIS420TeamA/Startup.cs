@@ -40,7 +40,7 @@ namespace CIS420TeamA
                 user.UserName = "admin";
                 user.Email = "ptwram08@gmail.com";
 
-                string userPWD = "soslouisville";
+                string userPWD = "";
 
                 var chkUser = UserManager.Create(user, userPWD);
 
