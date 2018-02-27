@@ -403,6 +403,11 @@ namespace CIS420TeamA.Controllers
             return View();
         }
 
+        public ActionResult AdminLandingPage()
+        {
+            return View();
+        }
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)
@@ -422,7 +427,7 @@ namespace CIS420TeamA.Controllers
 
             base.Dispose(disposing);
         }
-
+        
         #region Helpers
         // Used for XSRF protection when adding external logins
         private const string XsrfKey = "XsrfId";
@@ -481,5 +486,6 @@ namespace CIS420TeamA.Controllers
             }
         }
         #endregion
+
     }
 }
