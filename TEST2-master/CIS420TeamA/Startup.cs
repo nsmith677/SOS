@@ -38,9 +38,9 @@ namespace CIS420TeamA
 
                 var user = new ApplicationUser();
                 user.UserName = "admin";
-                user.Email = "ptwram08@gmail.com";
+                user.Email = "test@gmail.com";
 
-                string userPWD = "";
+                string userPWD = "soslouisville";
 
                 var chkUser = UserManager.Create(user, userPWD);
 

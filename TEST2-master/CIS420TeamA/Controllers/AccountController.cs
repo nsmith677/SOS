@@ -79,7 +79,7 @@ namespace CIS420TeamA.Controllers
             switch (result)
             {
                 case SignInStatus.Success:
-                    return RedirectToLocal(returnUrl);
+                    return RedirectToLocalAdmin(returnUrl);
                 case SignInStatus.LockedOut:
                     return View("Lockout");
                 case SignInStatus.RequiresVerification:
@@ -403,6 +403,11 @@ namespace CIS420TeamA.Controllers
             return View();
         }
 
+        public ActionResult AdminLandingPage()
+        {
+            return View();
+        }
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)
@@ -422,7 +427,7 @@ namespace CIS420TeamA.Controllers
 
             base.Dispose(disposing);
         }
-
+        
         #region Helpers
         // Used for XSRF protection when adding external logins
         private const string XsrfKey = "XsrfId";
@@ -450,6 +455,15 @@ namespace CIS420TeamA.Controllers
                 return Redirect(returnUrl);
             }
             return RedirectToAction("Index", "Home");
+        }
+
+        private ActionResult RedirectToLocalAdmin(string returnUrl)
+        {
+            if (Url.IsLocalUrl(returnUrl))
+            {
+                return Redirect(returnUrl);
+            }
+            return RedirectToAction("AdminLandingPage", "Account");
         }
 
         internal class ChallengeResult : HttpUnauthorizedResult
@@ -481,5 +495,6 @@ namespace CIS420TeamA.Controllers
             }
         }
         #endregion
+
     }
 }
