@@ -4,7 +4,7 @@
     ViewBag.Title = "Login";
 }
 
-
+<link href="~/css/style.css" rel="stylesheet">
 
 <h2 style="margin-top: 90px">@ViewBag.Title.</h2>
 <div class="row active">
@@ -47,17 +47,17 @@
                     @Html.ActionLink("Register as a new user", "Register")
                 </div>
                 /*Enable this once you have account confirmation enabled for password reset functionality*/
-                    <div style="color: black;">
-                        @Html.ActionLink("Forgot your password?", "ForgotPassword")
-                    </div>
+                <div style="color: black;">
+                    @Html.ActionLink("Forgot your password?", "ForgotPassword")
+                </div>
             }
         </section>
     </div>
     @*<div class="col-md-4">
-        <section id="socialLoginForm">
-            @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
-        </section>
-    </div>*@
+            <section id="socialLoginForm">
+                @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
+            </section>
+        </div>*@
 </div>
 
 @section Scripts {
