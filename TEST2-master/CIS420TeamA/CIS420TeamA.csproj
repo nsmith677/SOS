@@ -351,6 +351,14 @@
     <Content Include="img\team-2.jpg" />
     <Content Include="img\team-3.jpg" />
     <Content Include="img\team-4.jpg" />
+    <Content Include="img\Testimonials 1.jpg" />
+    <Content Include="img\Testimonials 2.jpg" />
+    <Content Include="img\Testimonials 3.jpg" />
+    <Content Include="img\Testimonials 4.jpg" />
+    <Content Include="img\Testimonials 5.jpg" />
+    <Content Include="img\Testimonials 6.jpg" />
+    <Content Include="img\Testimonials 7.jpg" />
+    <Content Include="img\Testimonials 8.jpg" />
     <Content Include="img\WhiteLettersLogoSOS.png" />
     <Content Include="js\main.js" />
     <Content Include="lib\animate\animate.css" />

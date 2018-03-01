@@ -1,3 +1,4 @@
+
 ﻿@model IEnumerable<CIS420TeamA.Models.Testimonials>
 
 @{
@@ -5,24 +6,248 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th></th>
-    </tr>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
-        </td>
-    </tr>
-}
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <script>
+        window.onload = function () {
+            document.getElementById('director').scrollIntoView();
+        }
+    </script>
 
-</table>
+    <!--==========================
+        Testimonials
+    ============================-->
+    <section id="director">
+        <section id="infoPointer">
+            <div>
+                <br /><br /><br />
+                <h2 style="text-align: center;">Patien Testimonials</h2>
+                @*<p style="text-align: center;">Our business strategy and affairs are overseen by our board of directors. Get to know our Surgery on Sunday Board of Directors below.</p>*@
+            </div>
+            <span></span>
+        </section>
+        <section id="leadership">
+            <div class="container">
+                <div class="leadershipContainer">
+                    <hr class="greyv2">
+                    <div class="row">
+
+                        <div class="col-md-4 col-sm-6 col-xs-6 leaderCol">
+                            <div class="leaderItem" data-leaderid="7498a4ae-ef57-6d37-8be6-ff1900e253d8">
+                                <img src="~/img/Testimonials 1.jpg"
+                                     onclick="document.getElementById('modal01').style.display='block'">
+                                <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                                    <div class="w3-modal-content w3-animate-zoom">
+                                        <p>
+                                            "I really appreciate your weekend hours… hours when our regular doctors won’t talk to us or see us, unless we’re in the hospital. Good for you, keep up the good work.”                                        </p>
+                                    </div>
+                                </div>
+                                <div class="nameInfo">
+                                    <h3>John Simms</h3>
+                                    <p>Thyroid Surgery.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 col-xs-6 leaderCol">
+                            <div class="leaderItem" data-leaderid="8798a4ae-ef57-6d37-8be6-ff1900e253d8">
+                                <img src="~/img/Testimonials 2.jpg"
+                                     onclick="document.getElementById('modal02').style.display='block'">
+                                <div id="modal02" class="w3-modal" onclick="this.style.display='none'">
+                                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                                    <div class="w3-modal-content w3-animate-zoom">
+                                        <p>
+                                            "I have always been able to talk to the doctor and get my problems resolved. Coming here is like dealing with trusted family. Would not consider changing doctors.”                                        </p>
+                                    </div>
+                                </div>
+                                <div class="nameInfo">
+                                    <h3>Joan Stevison</h3>
+                                    <p>Laparoscopic Adrenalectomy.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 col-xs-6 leaderCol">
+                            <div class="leaderItem" data-leaderid="b67cacae-ef57-6d37-8be6-ff1e00e253d8">
+                                <img src="~/img/Testimonials 3.jpg"
+                                     onclick="document.getElementById('modal03').style.display='block'">
+                                <div id="modal03" class="w3-modal" onclick="this.style.display='none'">
+                                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                                    <div class="w3-modal-content w3-animate-zoom">
+                                        <p>
+                                            “They always treat me with tender loving care. Because they really do care.”                                        </p>
+                                    </div>
+                                </div>
+                                <div class="nameInfo">
+                                    <h3>Mitchell</h3>
+                                    <p>Ophthalmological Surgery.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 col-xs-6 leaderCol">
+                            <div class="leaderItem" data-leaderid="7697a4ae-ef57-6d37-8be6-ff1900e253d8">
+                                <img src="~/img/Testimonials 4.jpg"
+                                     onclick="document.getElementById('modal04').style.display='block'">
+                                <div id="modal04" class="w3-modal" onclick="this.style.display='none'">
+                                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                                    <div class="w3-modal-content w3-animate-zoom">
+                                        <p>
+                                            “Thank you very much! Everyone is so friendly, and I am very thankful you are in this area to care for us when we need you. Your hours you are available are wonderful. The Doctors, nurses & staff are professional and very thorough.”                                        </p>
+                                    </div>
+                                </div>
+                                <div class="nameInfo">
+                                    <h3>Kelli Walling</h3>
+                                    <p>Cataract Surgery.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 col-xs-6 leaderCol">
+                            <div class="leaderItem" data-leaderid="9798a4ae-ef57-6d37-8be6-ff1900e253d8">
+                                <img src="~/img/Testimonials 5.jpg"
+                                     onclick="document.getElementById('modal05').style.display='block'">
+                                <div id="modal05" class="w3-modal" onclick="this.style.display='none'">
+                                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                                    <div class="w3-modal-content w3-animate-zoom">
+                                        <p>
+                                           	"I should have had the surgery done a long time ago. Now that it is done, I feel like a new woman. Thank you so very much."
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="nameInfo">
+                                    <h3>Karen Florman</h3>
+                                    <p>Breast Biopsy.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 col-xs-6 leaderCol">
+                            <div class="leaderItem" data-leaderid="1bc7a6ae-ef57-6d37-8be6-ff1e00e253d8">
+                                <img src="~/img/Testimonials 6.jpg"
+                                     onclick="document.getElementById('modal06').style.display='block'">
+                                <div id="modal06" class="w3-modal" onclick="this.style.display='none'">
+                                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                                    <div class="w3-modal-content w3-animate-zoom">
+                                        <p> “Thank you so much for providing such wonderful service! The doctors and staff were very friendly and provided me with an exceptional experience.” </p>
+                                    </div>
+                                </div>
+                                <div class="nameInfo">
+                                    <h3>Mark Rudd</h3>
+                                    <p>Colon and Rectal Surgery.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 col-xs-6 leaderCol">
+                            <div class="leaderItem" data-leaderid="92c7a6ae-ef57-6d37-8be6-ff1e00e253d8">
+                                <img src="~/img/Testimonials 7.jpg"
+                                     onclick="document.getElementById('modal07').style.display='block'">
+                                <div id="modal07" class="w3-modal" onclick="this.style.display='none'">
+                                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                                    <div class="w3-modal-content w3-animate-zoom">
+                                        <p>
+                                            “I have gone to Surgery On Sunday for a couple years and have always been very satisfied with the care and attention that I have received.”
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="nameInfo">
+                                    <h3>Tyler Pitt</h3>
+                                    <p>Major Abdominal Procedure.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 col-xs-6 leaderCol">
+                            <div class="leaderItem" data-leaderid="d798a4ae-ef57-6d37-8be6-ff1900e253d8">
+                                <img src="~/img/Testimonials 8.jpg"
+                                     onclick="document.getElementById('modal08').style.display='block'">
+                                <div id="modal08" class="w3-modal" onclick="this.style.display='none'">
+                                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                                    <div class="w3-modal-content w3-animate-zoom">
+                                        <p>
+                                            "I cannot begin to express my satisfaction with the staff at the clinic for Surgery on Sunday Louisville I visited. From the front desk, to the nurses, and the doctor. Each one of them was courteous, professional, and made my visit as comfortable as they possibly could. Please forward my thanks on to each one of the staff there. Thanks!!”
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="nameInfo">
+                                    <h3>Jordan Hillen</h3>
+                                    <p>Minimally Invasive Spine Surgery.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        @*<div class="col-md-4 col-sm-6 col-xs-6 leaderCol">
+                            <div class="leaderItem" data-leaderid="f697a4ae-ef57-6d37-8be6-ff1900e253d8">
+                                <img src="http://www.pepsico.com/images/album/Leadership/board-of-directors/img-bod-page.jpg?sfvrsn=6bc0c941_2"
+                                     onclick="document.getElementById('modal09').style.display='block'">
+                                <div id="modal09" class="w3-modal" onclick="this.style.display='none'">
+                                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                                    <div class="w3-modal-content w3-animate-zoom">
+                                        <p>
+                                            Virginia Mattingly earned a BA in psychology, followed by an MBA from Georgetown University McDonough School of Business, where she served as the VP of Admissions of Hispanic and Latin American Student Association, and participated in Global Residency Consulting Project in Vietnam, focused on improving a Vietnamese bank’s marketing and human resources strategies.
+                                            Virginia came to Surgery On Sunday as she completed the Leadership Louisville’s Ignite Louisville program.  She has also served on the Fundraising Committee for Peace Education Program, and provides data analysis and serves as the Insights Lead for Emerging Consumer and Brands at Brown –Forman.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="nameInfo">
+                                    <h3>Virginia Mattingly</h3>
+                                    <p> Insights Lead for Emerging Consumer and Brands at Brown –Forman</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 col-xs-6 leaderCol">
+                            <div class="leaderItem" data-leaderid="adc7a6ae-ef57-6d37-8be6-ff1e00e253d8">
+                                <img src="http://www.pepsico.com/images/album/Leadership/board-of-directors/robert-pohlad.jpg?sfvrsn=2380cb41_2"
+                                     onclick="document.getElementById('modal10').style.display='block'">
+                                <div id="modal10" class="w3-modal" onclick="this.style.display='none'">
+                                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                                    <div class="w3-modal-content w3-animate-zoom">
+                                        <p>
+                                            Daniel Mudd was a double major in Finance and Business Management at the University of Kentucky Gatton College of Business and Economics, and earned his law degree in 2007 at the University of Kentucky College of Law.  Daniel is a Managing Associate Attorney and Member of Frost Brown Todd, where his focus is in tax law and legal research.
+                                            Daniel came to the Board of Directors through the Louisville Ignite Program, and serves Surgery on Sunday Louisville as legal counsel in matters pertaining to non-profit 501(c)3 structure and corporate compliance filings and legal contracts.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="nameInfo">
+                                    <h3>Daniel Mudd</h3>
+                                    <p>Managing Associate Attorney and Member of Frost Brown Todd</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 col-xs-6 leaderCol">
+                            <div class="leaderItem" data-leaderid="0799a4ae-ef57-6d37-8be6-ff1900e253d8">
+                                <img src="http://www.pepsico.com/images/album/Leadership/board-of-directors/img-bod-daniel.jpg?sfvrsn=bd80727_2"
+                                     onclick="document.getElementById('modal11').style.display='block'">
+                                <div id="modal11" class="w3-modal" onclick="this.style.display='none'">
+                                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                                    <div class="w3-modal-content w3-animate-zoom">
+                                        <p>
+                                            Sherri Ryan, RN earned a BS in Business Administration and General Management from Oakland City College, an MBA at Indiana University Southeast, and an RN from Bellarmine University.  Sherri has served as a Practice Manager and Nurse Manager for several healthcare organizations, and is currently the Practice Manager for University of Louisville Physicians Neurosurgery Department.
+                                            As a former member of the Louisville Ignite Program, Sherri brings a wealth of knowledge and expertise to the Surgery On Sunday Board of Directors.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="nameInfo">
+                                    <h3>Sherri Ryan</h3>
+                                    <p> Practice Manager for University of Louisville Physicians Neurosurgery Department</p>
+                                </div>
+                            </div>
+                        </div>*@
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section><!-- #about -->
+</body>
+</html>
+
+@*<h2>Testimonials</h2>*@
+
