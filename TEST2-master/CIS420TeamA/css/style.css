@@ -18,6 +18,14 @@ a {
     color: #fff;
 }
 
+.registerdiv a {
+    color: #666666;
+}
+
+.passworddiv a {
+    color: #666666;
+}
+
 a:hover, a:active, a:focus {
     color: #FF3333;
     outline: none;
