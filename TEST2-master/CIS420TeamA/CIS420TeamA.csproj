@@ -195,6 +195,7 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ResponseController.cs" />
     <Compile Include="Controllers\StaffController.cs" />
+    <Compile Include="Controllers\TestimonialsController.cs" />
     <Compile Include="Controllers\VolunteerController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -209,6 +210,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Staff.cs" />
+    <Compile Include="Models\Testimonials.cs" />
     <Compile Include="Models\Volunteer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -350,6 +352,14 @@
     <Content Include="img\team-2.jpg" />
     <Content Include="img\team-3.jpg" />
     <Content Include="img\team-4.jpg" />
+    <Content Include="img\Testimonials 1.jpg" />
+    <Content Include="img\Testimonials 2.jpg" />
+    <Content Include="img\Testimonials 3.jpg" />
+    <Content Include="img\Testimonials 4.jpg" />
+    <Content Include="img\Testimonials 5.jpg" />
+    <Content Include="img\Testimonials 6.jpg" />
+    <Content Include="img\Testimonials 7.jpg" />
+    <Content Include="img\Testimonials 8.jpg" />
     <Content Include="img\WhiteLettersLogoSOS.png" />
     <Content Include="js\main.js" />
     <Content Include="lib\animate\animate.css" />
@@ -457,6 +467,7 @@
     <Content Include="Views\Volunteer\Details.cshtml" />
     <Content Include="Views\Volunteer\Edit.cshtml" />
     <Content Include="Views\Volunteer\Index.cshtml" />
+    <Content Include="Views\Testimonials\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
