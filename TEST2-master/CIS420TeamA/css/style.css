@@ -207,50 +207,50 @@ h1, h2, h3, h4, h5, h6 {
     list-style: none;
 }
 
-    .nav-menu ul {
-        position: absolute;
-        display: none;
-        top: 100%;
-        left: 0;
-        z-index: 99;
-    }
+.nav-menu ul {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    z-index: 99;
+}
 
-    .nav-menu li {
-        position: relative;
-        white-space: nowrap;
-    }
+.nav-menu li {
+    position: relative;
+    white-space: nowrap;
+}
 
-    .nav-menu > li {
-        float: left;
-    }
+.nav-menu > li {
+    float: left;
+}
 
-    .nav-menu li:hover > ul,
-    .nav-menu .sfHover > ul {
-        display: block;
-    }
+.nav-menu li:hover > ul,
+.nav-menu .sfHover > ul {
+    display: block;
+}
 
-    .nav-menu ul ul {
-        top: 0;
-        left: 100%;
-    }
+.nav-menu ul ul {
+    top: 0;
+    left: 100%;
+}
 
-    .nav-menu ul li {
-        min-width: 180px;
-    }
+.nav-menu ul li {
+    min-width: 180px;
+}
 
 /* Nav Menu Arrows */
 .sf-arrows .sf-with-ul {
     padding-right: 30px;
 }
 
-    .sf-arrows .sf-with-ul:after {
-        content: "\f107";
-        position: absolute;
-        right: 15px;
-        font-family: FontAwesome;
-        font-style: normal;
-        font-weight: normal;
-    }
+.sf-arrows .sf-with-ul:after {
+    content: "\f107";
+    position: absolute;
+    right: 15px;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+}
 
 .sf-arrows ul .sf-with-ul:after {
     content: "\f105";
@@ -288,21 +288,21 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 10px;
 }
 
-    .nav-menu > li > a:before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        top: 30px;
-        bottom: 0;
-        left: 0;
-        background-color: #FFFFFF;
-        visibility: hidden;
-        -webkit-transform: scaleX(0);
-        transform: scaleX(0);
-        -webkit-transition: all 0.3s ease-in-out 0s;
-        transition: all 0.3s ease-in-out 0s;
-    }
+.nav-menu > li > a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 30px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
 
 
 .nav-menu a:hover:before, .nav-menu li:hover > a:before, .nav-menu .menu-active > a:before {
@@ -316,31 +316,31 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid #e7e7e7;
 }
 
-    .nav-menu ul li {
-        background: #fff;
-    }
+.nav-menu ul li {
+    background: #fff;
+}
 
-        .nav-menu ul li:first-child {
-            border-top: 0;
-        }
+.nav-menu ul li:first-child {
+    border-top: 0;
+}
 
-        .nav-menu ul li a {
-            padding: 10px;
-            color: #333;
-            transition: 0.3s;
-            display: block;
-            font-size: 13px;
-            text-transform: none;
-        }
+.nav-menu ul li a {
+    padding: 10px;
+    color: #333;
+    transition: 0.3s;
+    display: block;
+    font-size: 13px;
+    text-transform: none;
+}
 
-            .nav-menu ul li a:hover {
-                background: #FF3333;
-                color: #fff;
-            }
+.nav-menu ul li a:hover {
+    background: #FF3333;
+    color: #fff;
+}
 
-    .nav-menu ul ul {
-        margin: 0;
-    }
+.nav-menu ul ul {
+    margin: 0;
+}
 
 /* Mobile Nav Toggle */
 #mobile-nav-toggle {

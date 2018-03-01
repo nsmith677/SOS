@@ -63,23 +63,13 @@
                     </li>
 
                     <!-- Get Involved Nav -->
-                    <li class="menu-has-children">
-                        <a href="~/#getinvolved" onclick="@Url.Action("Index", "Home")">Get Involved</a>
-                        <ul>
-                            <li id="physicianFormHeader"><a>Physician Volunteer Application</a></li>
-                            <li id="nonphysicianFormHeader"><a>Non-Physician Volunteer Application</a></li>
-                            <li id="nonclinicalFormHeader"><a>Non-Clinical Volunteer Application</a></li>
-                            <li id="interpreterFormHeader"><a>Medical Interpreter Volunteer Application</a></li>
-                            <li id="commentFormHeader"><a>Volunteer Comment Form</a></li>
-                            <li id="referralFormHeader"><a>Patient Referral</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="~/#getinvolved" onclick="@Url.Action("Index", "Home")">Get Involved</a></li>
 
                     <!-- Get Help Nav-->
                     <li class="menu-has-children">
                         <a href="~/#gethelp" onclick="@Url.Action("Index", "Home")">Get Help</a>
                         <ul>
-                            <li><a href="partnerclinics">Partner Clinics</a></li>
+                            <li>@Html.ActionLink("Partner Clinics", "Index", "Clinics")</li>
                         </ul>
                     </li>
 
