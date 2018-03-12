@@ -9,11 +9,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<body><br /><br /><br />
+<body>
+    <br /><br /><br />
     <section id="landingpage">
         <form>
             <span>
-                <input type="button" value="Typeform" onclick="window.location.href='http://www.typeform.com'" formtarget="_top" />
+                <input type="button" value="Typeform" onclick="getResponses()" formtarget="_top" />
                 <input type="button" value="Google Calendar" onclick="window.location.href='http://www.google.com'" formtarget="_top" />
             </span>
             <br>
@@ -21,5 +22,52 @@
         </form>
     </section>
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <div class="box" id="physicianForm">
+        <div class="icon"><a><i class="fa fa-user-md" aria-hidden="true"></i></a></div>
+        <h4 class="title"><a>Physician Volunteer Form</a></h4>
+        <p class="description">If you are a physician and would like to volunteer.</p>
+    </div>
+
 </body>
 </html>
+<script src="~/js/typeformjs.js"></script>
+<script src="https://embed.typeform.com/embed.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+    function getResponses() {
+        var clientID = "Bc2TKGZD8xK2mChJbZfhuoegkbTMhnbksnzfpwSRq5Th";
+        var clientSecret = "JCeK9xjXJKLVUQNJW92MMVzDbHZfoX8p17UDpRptNagP";
+        var token = "AnDp8HMSXwSVR2VCbR44hR1y3X4ybiWSs7vNbYmLNQkC";
+
+        var tempURL = `https://api.typeform.com/oauth/authorize?client_id=${clientID}&redirect_uri=https://results-example.herokuapp.com/callback&scope={scope1 scope2 scope3}`;
+
+        $.ajax({
+            //url: "https://crossorigin.me/https://api.typeform.com/forms/i7DE5N/responses",
+            url: "https://api.typeform.com/forms/i7DE5N/responses",
+            contentType: "application/json",
+            headers: {
+                "Authorization": "bearer " + token,  
+                "Content-Type": "application/json",                
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Headers": "*",
+                //"Access-Control-Request-Method": "Access-Control-Allow-Methods"
+            },
+            //beforeSend: function (xhr) {
+            //    xhr.setRequestHeader('client_id', clientID);
+            //    xhr.setRequestHeader('client_secret', clientSecret);
+            //},
+            //async: true,
+            type: "GET",
+            dataType: "json",
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.log("Fail: " + errorThrown);
+            },
+            success: function (data, textStatus, jqXHR) {
+                console.log(data);
+            }
+        });
+    };
+
+
+</script>
