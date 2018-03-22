@@ -22,11 +22,11 @@
         </form>
     </section>
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <div class="box" id="physicianForm">
+    @*<div class="box" id="physicianForm">
         <div class="icon"><a><i class="fa fa-user-md" aria-hidden="true"></i></a></div>
         <h4 class="title"><a>Physician Volunteer Form</a></h4>
         <p class="description">If you are a physician and would like to volunteer.</p>
-    </div>
+    </div>*@
 
 </body>
 </html>
@@ -36,30 +36,90 @@
 <script type="text/javascript">
 
     function getResponses() {
-        var clientID = "Bc2TKGZD8xK2mChJbZfhuoegkbTMhnbksnzfpwSRq5Th";
-        var clientSecret = "JCeK9xjXJKLVUQNJW92MMVzDbHZfoX8p17UDpRptNagP";
         var token = "AnDp8HMSXwSVR2VCbR44hR1y3X4ybiWSs7vNbYmLNQkC";
 
-        var tempURL = `https://api.typeform.com/oauth/authorize?client_id=${clientID}&redirect_uri=https://results-example.herokuapp.com/callback&scope={scope1 scope2 scope3}`;
-
+        //Non-Clinical General
         $.ajax({
-            //url: "https://crossorigin.me/https://api.typeform.com/forms/i7DE5N/responses",
+            url: "https://api.typeform.com/forms/V8ayYJ/responses",
+            headers: {
+                "Authorization": "bearer " + token,
+            },
+            type: "GET",
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.log("Fail: " + errorThrown);
+            },
+            success: function (data, textStatus, jqXHR) {
+                console.log(data);
+            }
+        });
+
+        //Non-Physician Clinical
+        $.ajax({
+            url: "https://api.typeform.com/forms/dx25pj/responses",
+            headers: {
+                "Authorization": "bearer " + token,
+            },
+            type: "GET",
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.log("Fail: " + errorThrown);
+            },
+            success: function (data, textStatus, jqXHR) {
+                console.log(data);
+            }
+        });
+
+        //Medical Interpreter
+        $.ajax({
+            url: "https://api.typeform.com/forms/V6fiB1/responses",
+            headers: {
+                "Authorization": "bearer " + token,
+            },
+            type: "GET",
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.log("Fail: " + errorThrown);
+            },
+            success: function (data, textStatus, jqXHR) {
+                console.log(data);
+            }
+        });
+
+        //Patient Referral
+        $.ajax({
+            url: "https://api.typeform.com/forms/dONmAG/responses",
+            headers: {
+                "Authorization": "bearer " + token,
+            },
+            type: "GET",
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.log("Fail: " + errorThrown);
+            },
+            success: function (data, textStatus, jqXHR) {
+                console.log(data);
+            }
+        });
+
+        //Volunteer Comment Form
+        $.ajax({
+            url: "https://api.typeform.com/forms/e7fP9h/responses",
+            headers: {
+                "Authorization": "bearer " + token,
+            },
+            type: "GET",
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.log("Fail: " + errorThrown);
+            },
+            success: function (data, textStatus, jqXHR) {
+                console.log(data);
+            }
+        });
+
+        //Physician
+        $.ajax({
             url: "https://api.typeform.com/forms/i7DE5N/responses",
-            contentType: "application/json",
             headers: {
                 "Authorization": "bearer " + token,  
-                "Content-Type": "application/json",                
-                "Access-Control-Allow-Origin": "*",
-                "Access-Control-Allow-Headers": "*",
-                //"Access-Control-Request-Method": "Access-Control-Allow-Methods"
             },
-            //beforeSend: function (xhr) {
-            //    xhr.setRequestHeader('client_id', clientID);
-            //    xhr.setRequestHeader('client_secret', clientSecret);
-            //},
-            //async: true,
             type: "GET",
-            dataType: "json",
             error: function (jqXHR, textStatus, errorThrown) {
                 console.log("Fail: " + errorThrown);
             },
