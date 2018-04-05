@@ -1,0 +1,112 @@
+﻿
+@{
+    ViewBag.Title = "Email Volunteer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="margin-top: 90px">@ViewBag.Title</h2>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <br /><br /><br />
+                <section id="emailVolunteerPage">
+                    <div class="row my-4">
+
+                        <div class="col-lg-2 col-md-12 ml-auto" align="left">
+
+                            <h5>Volunteers</h5>
+                            <br />
+                            <select name="volunteersList" multiple="multiple">
+                                <option>Gopal Parmar</option>
+                                <option>Patrick Warren</option>
+                                <option>Nicole Smith</option>
+                                <option>Carlos Acevedo</option>
+                                <option>Cody Higdon</option>
+                                <option>Savannah James</option>
+
+
+                            </select>
+                            <br />
+                            <br />
+
+                            <input type="button" value="Add to Recipients">
+                            <br />
+                            <br />
+
+                            <input type="button" value="Add All">
+
+                        </div>
+                        <div class="col-lg-2" align="left">
+
+                            <h5>Recipients</h5>
+                            <br />
+                            <select name="volunteersList" multiple="multiple">
+                               
+
+
+                            </select>
+                            <br />
+                            <br />
+
+                            <input type="button" value="Remove Recipient">
+                            <br />
+                            <br />
+
+                            <input type="button" value="Remove All">
+
+
+                        </div>
+                        <div class="col-lg-7 col-md-12 ">
+
+                            <h5>Compose Message</h5>
+                            <br />
+
+                            <div class="label">
+                                <label for="subject">
+
+                                    Subject
+                                </label>
+                            </div>
+
+                            <div class="field">
+
+                                <input type="text" name="subject_t" id="subject_t" value="" size="50" maxlength="50" />
+
+
+
+                                <!--//todo: add validation for subject-->
+
+                                <span class="fieldErrorText"></span>
+
+                            </div>
+                            <br>
+
+                            <div class="label">
+                                <label for="Message">
+
+                                    Message
+                                </label>
+                            </div>
+
+                            <div class="wmd-container">
+                                <div id="wmd-button-bar" class="wmd-button-bar"></div>
+                                <textarea id="wmd-input" class="wmd-input" name="post-text" cols="92" rows="15" tabindex="101" data-min-length=""></textarea>
+                            </div>
+                            <br>
+
+                            <input type="button" value="Send">
+
+
+
+                        </div>
+                        </div>
+
+
+                </section>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+   
+
+</body>
+</html>

@@ -403,6 +403,11 @@ namespace CIS420TeamA.Controllers
             return View();
         }
 
+        public ActionResult EmailVolunteerPage()
+        {
+            return View();
+        }
+
         public ActionResult AdminLandingPage()
         {
             return View();

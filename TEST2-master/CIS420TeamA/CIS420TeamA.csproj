@@ -474,6 +474,7 @@
     <Content Include="Views\Testimonials\Edit.cshtml" />
     <Content Include="Views\Testimonials\Index.cshtml" />
     <Content Include="Views\Clinics\Index.cshtml" />
+    <Content Include="Views\Account\EmailVolunteerPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
