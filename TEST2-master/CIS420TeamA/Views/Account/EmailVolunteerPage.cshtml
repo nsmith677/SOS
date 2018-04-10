@@ -16,92 +16,124 @@
 
                         <div class="col-lg-2 col-md-12 ml-auto" align="left">
 
-                            <h5>Volunteers</h5>
-                            <br />
+                            <h5>Non-Clinical Volunteers</h5>
                             <select name="volunteersList" multiple="multiple">
                                 <option>Gopal Parmar</option>
-                                <option>Patrick Warren</option>
-                                <option>Nicole Smith</option>
-                                <option>Carlos Acevedo</option>
-                                <option>Cody Higdon</option>
-                                <option>Savannah James</option>
-
-
                             </select>
                             <br />
                             <br />
-
                             <input type="button" value="Add to Recipients">
                             <br />
                             <br />
-
                             <input type="button" value="Add All">
 
-                        </div>
-                        <div class="col-lg-2" align="left">
-
-                            <h5>Recipients</h5>
-                            <br />
+                            <h5>Non-Physician Volunteers</h5>
                             <select name="volunteersList" multiple="multiple">
-                               
-
-
+                                <option>Patrick Warren</option>
                             </select>
                             <br />
                             <br />
-
-                            <input type="button" value="Remove Recipient">
+                            <input type="button" value="Add to Recipients">
                             <br />
                             <br />
+                            <input type="button" value="Add All">
 
-                            <input type="button" value="Remove All">
-
-
-                        </div>
-                        <div class="col-lg-7 col-md-12 ">
-
-                            <h5>Compose Message</h5>
+                            <h5>Medical Interpreter Volunteers</h5>
+                            <select name="medicalInterpeterList" multiple="multiple">
+                                <option>Nicole Smith</option>
+                            </select>
                             <br />
+                            <br />
+                            <input type="button" value="Add to Recipients">
+                            <br />
+                            <br />
+                            <input type="button" value="Add All">
 
-                            <div class="label">
-                                <label for="subject">
+                            <h5>General Volunteers</h5>
+                            <select name="General Volunteer" multiple="multiple">
+                                <option>Carlos Acevedo</option>
+                            </select>
+                            <br />
+                            <br />
+                            <input type="button" value="Add to Recipients">
+                            <br />
+                            <br />
+                            <input type="button" value="Add All">
 
-                                    Subject
-                                </label>
-                            </div>
-
-                            <div class="field">
-
-                                <input type="text" name="subject_t" id="subject_t" value="" size="50" maxlength="50" />
-
-
-
-                                <!--//todo: add validation for subject-->
-
-                                <span class="fieldErrorText"></span>
-
-                            </div>
-                            <br>
-
-                            <div class="label">
-                                <label for="Message">
-
-                                    Message
-                                </label>
-                            </div>
-
-                            <div class="wmd-container">
-                                <div id="wmd-button-bar" class="wmd-button-bar"></div>
-                                <textarea id="wmd-input" class="wmd-input" name="post-text" cols="92" rows="15" tabindex="101" data-min-length=""></textarea>
-                            </div>
-                            <br>
-
-                            <input type="button" value="Send">
-
-
+                            <h5>Physician Volunteers</h5>
+                            <select name="Physician Volunteer" multiple="multiple">
+                                <option>Cody Higdon</option>
+                                <option>Savannah James</option>
+                            </select>
+                            <br />
+                            <br />
+                            <input type="button" value="Add to Recipients">
+                            <br />
+                            <br />
+                            <input type="button" value="Add All">
 
                         </div>
+
+                    <div class="col-lg-2" align="left">
+
+                        <h5>Recipients</h5>
+                        <br />
+                        <select name="volunteersList" multiple="multiple"><option>Add Recipients</option></select>
+                        <br />
+                        <br />
+
+                        <input type="button" value="Remove Recipient">
+                        <br />
+                        <br />
+
+                        <input type="button" value="Remove All">
+
+
+                    </div>
+                    <div class="col-lg-7 col-md-12 ">
+
+                        <h5>Compose Message</h5>
+                        <br />
+
+                        <div class="label">
+                            <label for="subject">
+
+                                Subject
+                            </label>
                         </div>
+
+                        <div class="field">
+
+                            <input type="text" name="subject_t" id="subject_t" value="" size="50" maxlength="50" />
+
+
+
+                            <!--//todo: add validation for subject-->
+
+                            <span class="fieldErrorText"></span>
+
+                        </div>
+                        <br>
+
+                        <div class="label">
+                            <label for="Message">
+
+                                Message
+                            </label>
+                        </div>
+
+                        <div class="wmd-container">
+                            <div id="wmd-button-bar" class="wmd-button-bar"></div>
+                            <textarea id="wmd-input" class="wmd-input" name="post-text" cols="80" rows="12" tabindex="101" data-min-length="20"></textarea>
+                        </div>
+                        <br>
+
+                        <input type="button" value="Send">
+
+
+
+                    </div>
+                    </div>
 
 
                 </section>
