@@ -205,6 +205,10 @@
     <Compile Include="Migrations\201804050059309_Email.Designer.cs">
       <DependentUpon>201804050059309_Email.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804101228372_LoginPage.cs" />
+    <Compile Include="Migrations\201804101228372_LoginPage.Designer.cs">
+      <DependentUpon>201804101228372_LoginPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Clinics.cs" />
@@ -502,6 +506,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201804050059309_Email.resx">
       <DependentUpon>201804050059309_Email.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804101228372_LoginPage.resx">
+      <DependentUpon>201804101228372_LoginPage.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
